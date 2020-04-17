@@ -5,20 +5,35 @@
     <el-row type="flex" class="row-bg" justify="center">
       <el-col :span="20">
         <div class="grid-content">
-          <el-card class="box-card">
+          <el-card class="box-card card1">
             <div slot="header" class="clearfix">
               <span>卡片名称</span>
               <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button>
             </div>
             <!-- <div v-for="o in 4" :key="o" class="text item">{{'列表内容 ' + o }}</div> -->
             <div>
-              <div id="myChart" :style="{width: '80%', height: '400px'}"></div>
+              <div id="myChart" :style="{width: '80%', height: '450px'}"></div>
             </div>
+          </el-card>
+
+          <el-card class="box-card card2">
+            <div slot="header" class="clearfix">
+              <span>卡片名称</span>
+              <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button>
+            </div>
+            <div v-for="o in 4" :key="o" class="text item">{{'列表内容 ' + o }}</div>
+          </el-card>
+
+          <el-card class="box-card card2">
+            <div slot="header" class="clearfix">
+              <span>卡片名称</span>
+              <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button>
+            </div>
+            <div v-for="o in 4" :key="o" class="text item">{{'列表内容 ' + o }}</div>
           </el-card>
         </div>
       </el-col>
     </el-row>
-    
   </div>
 </template>
 
@@ -77,5 +92,9 @@ export default {
 
 .box-card {
   width: 100%;
+}
+
+.card2 {
+  margin-top: 20px;
 }
 </style>
